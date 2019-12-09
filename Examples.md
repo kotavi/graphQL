@@ -40,12 +40,14 @@ Aliases allow us to give the field a customized name and to request data from th
 *update1* and *update2* are aliases
 ```text
 mutation {
-  update1: updateUser(name: "David Schwimmer", id: "ck1tt4wwz0njc0140bp5aob0j"){
+  update1: updateUser(name: "David Schwimmer", 
+    id: "ck1tt4wwz0njc0140bp5aob0j"){
     name
     id
     createdAt
   }
-  update2: updateUser(name: "Kevin S. Bright", id: "ck1tt4a6x0ndc0199osuvl7cb"){
+  update2: updateUser(name: "Kevin S. Bright", 
+    id: "ck1tt4a6x0ndc0199osuvl7cb"){
     name
     id
   }
@@ -73,10 +75,12 @@ Fragments are reusable sets of fields that can be included in queries as needed.
 
 ```text
 mutation {
-  update1: updateUser(name: "David Schwimmer", id: "ck1tt4wwz0njc0140bp5aob0j"){
+  update1: updateUser(name: "David Schwimmer", 
+    id: "ck1tt4wwz0njc0140bp5aob0j"){
     ...updateUser
   }
-  update2: updateUser(name: "Kevin S. Bright", id: "ck1tt4a6x0ndc0199osuvl7cb"){
+  update2: updateUser(name: "Kevin S. Bright", 
+    id: "ck1tt4a6x0ndc0199osuvl7cb"){
     ...updateUser
   }
 }
