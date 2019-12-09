@@ -80,7 +80,8 @@ Examples:
         <td>
         <pre>
   mutation {
-    updateUser(name: "Paul Rudd", id: "ck2cqj2lm04h40102u8du1u92"){
+    updateUser(name: "Paul Rudd", 
+        id: "ck2cqj2lm04h40102u8du1u92"){
         name
         id
     }
