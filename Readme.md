@@ -64,6 +64,70 @@ Features:
 
 ![query example](fetching_data_with_queries.png)
 
+### Edges
+
+Having edges indicates that there's some sort of a connection to another array of data. 
+
+```text
+{
+  viewer {
+    name
+    id
+    bio
+    repositories(last:3) {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
+  }
+}
+
+{
+  "data": {
+    "viewer": {
+      "name": "Tetiana",
+      "id": "MDQ6VXNlcjM2MDk5MTY=",
+      "bio": "",
+      "repositories": {
+        "edges": [
+          {
+            "node": {
+              "id": "MDEwOlJlcG9zaXRvcnkyMjEzNTE5NjY=",
+              "name": "30-days-of-code-python"
+            }
+          },
+          {
+            "node": {
+              "id": "MDEwOlJlcG9zaXRvcnkyMjE1MzY4NzE=",
+              "name": "Glassdoor-BDD-with-selenium"
+            }
+          },
+          {
+            "node": {
+              "id": "MDEwOlJlcG9zaXRvcnkyMjY3ODM2Mjc=",
+              "name": "graphQL"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+```
+ We have a Repositories field and that's connected to each individual Repository. 
+ You can think of it like an array of objects. 
+ Now Edges represents a connection to another array of data. 
+ And then each Node is an individual Repository.
+
+![](edges.png)
+
+### Multiple nested fields
+
+
+
 ### Writing data with mutations
 
 1. creating new data
@@ -139,6 +203,10 @@ Examples:
     https://lucasconstantino.github.io/graphiql-online/
     http://graphql.nodaljs.com/
     https://www.graphql.college/practice-graphql/
+    
+- comments online
+    https://dev.to/karn/comment/hg7
+    
     
 #### Tutorials
 
