@@ -196,15 +196,18 @@ Examples:
 ### Useful links
 
 - learn about GraphQL
+    
     https://developer.github.com/v4/#about-graphql
 
 - practice GraphQL online
+    
     https://developer.github.com/v4/explorer/
     https://lucasconstantino.github.io/graphiql-online/
     http://graphql.nodaljs.com/
     https://www.graphql.college/practice-graphql/
     
 - comments online
+    
     https://dev.to/karn/comment/hg7
     
     
