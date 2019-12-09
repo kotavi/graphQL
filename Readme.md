@@ -213,8 +213,8 @@ Examples:
     
 #### Tutorials
 
-https://www.howtographql.com/
-https://www.linkedin.com/learning/learning-graphql
+- https://www.howtographql.com/
+- https://www.linkedin.com/learning/learning-graphql
 
     
 
