@@ -58,11 +58,11 @@ Features:
     </tr>
 </table>
 
-![1-to-many relation](relation.png)
+![1-to-many relation](images/relation.png)
 
 ### Fetching data with queries
 
-![query example](fetching_data_with_queries.png)
+![query example](images/fetching_data_with_queries.png)
 
 ### Edges
 
@@ -122,7 +122,7 @@ Having edges indicates that there's some sort of a connection to another array o
  Now Edges represents a connection to another array of data. 
  And then each Node is an individual Repository.
 
-![](edges.png)
+![](images/edges.png)
 
 ### Multiple nested fields
 
