@@ -46,7 +46,7 @@ Features:
   }
         </pre>
         </td>
-        <td align=top>
+        <td>
         <pre>
   type Post {
     title: String!
@@ -54,7 +54,7 @@ Features:
   }
         </pre>
         </td>
-        <td>Notes: One person can be an author of meny posts </td>
+        <td>Notes: One person can be an author of many posts </td>
     </tr>
 </table>
 
@@ -126,8 +126,6 @@ Examples:
         </td>
     </tr>
 </table>
-
-![mutation]()
 
 
 ### Useful links
