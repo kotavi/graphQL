@@ -1,0 +1,15 @@
+query fiveLastOrgMembers {
+  organization(login: "facebook") {
+    id
+    name
+    membersWithRole(last: 5) {
+      edges {
+        node {
+          id
+          name
+          login
+        }
+      }
+    }
+  }
+}

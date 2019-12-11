@@ -1,0 +1,20 @@
+query LastNOrgMembers($login: String!, $n: Int!) {
+  organization(login: $login) {
+    id
+    name
+    membersWithRole(last: $n) {
+      edges {
+        node {
+          id
+          name
+          login
+        }
+      }
+    }
+  }
+}
+
+
+
+# Query Variables
+{"login": "google" , "n": 5}

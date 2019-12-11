@@ -1,0 +1,49 @@
+*********
+Mutation
+
+mutation NewComment($input: AddCommentInput!) {
+  addComment(input: $input) {
+    clientMutationId
+    subject {
+      id
+    }
+  }
+}
+
+*********
+Query Variables
+
+{
+  "input": {
+  "clientMutationId": "1717171",
+  "subjectId": "MDU6SXNzdWU1MzU4Njc4Mjg",
+  "body": "New comment!"
+	}
+}
+
+***********
+Repository Check
+
+{
+  repositoryOwner(login: "kotavi") {
+    repository(name: "graphQL") {
+      issues(first: 2) {
+        edges {
+          node {
+            id
+            title
+            body
+            comments(first: 2) {
+              edges {
+                node {
+                  id
+                  body
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

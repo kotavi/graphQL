@@ -1,0 +1,15 @@
+mutation {
+  update1: updateUser(name: "David Schwimmer",
+    id: "ck1tt4wwz0njc0140bp5aob0j"){
+    name
+    id
+    createdAt
+  }
+  update2: updateUser(name: "Kevin S. Bright",
+    id: "ck1tt4a6x0ndc0199osuvl7cb"){
+    name
+    id
+  }
+}
+
+where update1 and update2 are aliases
